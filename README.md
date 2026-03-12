@@ -12,6 +12,7 @@
     - HttpServlet - Servlet Stack - synchronous
     - Reactive Stack - reactive, asynchronous, non-blocking
       - WebClient - Spring Web Reactive (spring-webflux)
+    - SpEL (Spring Expression Language)
 
 * Jakarta EE - specifications extending Java SE for enterprise features e.g. distributed computing, web services
   * Payara Cloud - “serverless” runtime that runs and scales Jakarta EE applications
@@ -80,6 +81,28 @@ synchronized (mutex) {
 public final class Customer {
 }
 ```
+- asyncronous calls
+```kotlin
+import org.springframework.scheduling.annotation.Async
+
+@Async
+fun generateReport(reportDate: LocalDate) {
+}
+```
+
+- JMX
+
+```
+@Component
+@ManagedResource
+class Processor {
+  @ManagedOperation(description = "Increment the counter")
+  public int increment() {
+    return count.incrementAndGet();
+  }
+}
+```
+
 - data-oriented
   - records (immutable objects)
   - sealed interfaces
