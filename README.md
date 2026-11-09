@@ -13,6 +13,14 @@
     - Reactive Stack - reactive, asynchronous, non-blocking
       - WebClient - Spring Web Reactive (spring-webflux)
     - SpEL (Spring Expression Language)
+- Web Servers
+  - Tomcat - Apache Software Foundation | Monolithic with a standard set of connectors | Embedding with Spring boot
+  - Jetty - Eclipse Foundation | Modular assemble only what you need | Embedding API
+- Event-driven
+  - Netty
+    - open-source, asynchronous, event-driven network application framework
+    - Java NIO (non-blocking I/O)
+    - Event loop group for a small pool of threads instead of one thread per connection
 
 * Jakarta EE - specifications extending Java SE for enterprise features e.g. distributed computing, web services
   * Payara Cloud - “serverless” runtime that runs and scales Jakarta EE applications
